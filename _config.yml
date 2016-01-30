@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.yytone.com" # the base hostname & protocol for your site
 twitter_username: yisha7
 github_username:  yisha7
-permalink: pretty
+permalink: none
 # Build settings
 markdown: kramdown
 port: 8080
