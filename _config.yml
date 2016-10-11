@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 一言堂 YYTone
+title: 一言堂
 email: yisha7@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   朝闻道，夕死可矣。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.yytone.com" # the base hostname & protocol for your site
+url: "http://yisha7.me" # the base hostname & protocol for your site
 twitter_username: yisha7
 github_username:  yisha7
 permalink: none
