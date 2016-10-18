@@ -2,7 +2,7 @@
 layout: post
 title:  通假时代
 date:   2010-10-13 23:13:03 +0800
-categories: view
+categories: viewpoint
 ---
 
 ![草泥马](https://c2.staticflickr.com/4/3822/14118241257_8839be6ba8_b.jpg)

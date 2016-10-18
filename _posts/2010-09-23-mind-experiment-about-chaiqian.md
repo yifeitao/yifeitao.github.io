@@ -2,7 +2,7 @@
 layout: post
 title:  关于拆迁的三个思想实验
 date:   2010-09-23 11:18:24 +0800
-categories: view
+categories: viewpoint
 ---
 
 关注[江西宜黄拆迁事件](http://news.cntv.cn/special/chqzf/shouye/index.shtml)时，我设想了以下三个场景，姑且称其为思想实验吧。
