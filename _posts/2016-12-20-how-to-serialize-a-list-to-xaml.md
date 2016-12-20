@@ -24,10 +24,10 @@ public class WpfObject : Label
 WPF控件的序列化方法如下：
 
 ```c#
-WpfObject label1 = new WpfObject { Content = "Hello, wpf" };
-string xaml = System.Windows.Markup.XamlWriter.Save(label1);
+WpfObject w1 = new WpfObject { Content = "Hello, wpf" };
+string xaml = System.Windows.Markup.XamlWriter.Save(w1);
 File.WriteAllText("label.xaml", xaml);
-WpfObject label2 = (WpfObject)System.Windows.Markup.XamlReader.Load(File.OpenRead("label.xaml"));
+WpfObject w2 = (WpfObject)System.Windows.Markup.XamlReader.Load(File.OpenRead("label.xaml"));
 ```
 
 由于XamlWriter类的不完善，不支持泛型列表的序列化，上述代码将抛出异常：
@@ -40,15 +40,15 @@ Cannot serialize a generic type “System.Collections.Generic.List`1[System.Stri
 所以需要包装泛型列表属性，使其能序列化，最简单的方法是使用派生类，代码如下：
 
 ```C#
-    public class Children : List<string>{}
-    public class WpfObject : Label
+public class Children : List<string>{}
+public class WpfObject : Label
+{
+    public WpfObject()
     {
-        public WpfObject()
-        {
-            Children = new Children { "hello", "wpf" };
-        }
-        public Children Children { get; set; }
+        Children = new Children { "hello", "wpf" };
     }
+    public Children Children { get; set; }
+}
 ```
 
 使用前述同样的序列化代码即可。
@@ -60,15 +60,15 @@ Cannot serialize a generic type “System.Collections.Generic.List`1[System.Stri
 考虑以下类型：
 
 ```C#
-    public class CommonObject
-    {
-        public List<string> Children { get; set; }
+public class CommonObject
+{
+    public List<string> Children { get; set; }
 
-        public CommonObject()
-        {
-            Children = new List<string> { "hello", "common" };
-        }
+    public CommonObject()
+    {
+        Children = new List<string> { "hello", "common" };
     }
+}
 ```
 
 它的序列化很简单直接，代码如下：
