@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  如何将序列化泛型List为xaml
-date:   2015-12-13 22:19:17 +0800
+date:   2016-12-20 18:57:17 +0800
 categories: coding
 ---
 Xaml实际上是一种加强版的Xml，Xaml最初是为了描述WPF控件而设计的，但其实具有一定的通用性，用Xaml序列化对象，可以自动维护对象间的引用关系，大大减轻工作量。
@@ -79,4 +79,3 @@ string xaml = System.Xaml.XamlServices.Save(p1);
 File.WriteAllText("parent.xaml", xaml);
 CommonObject p2 = (CommonObject)System.Xaml.XamlServices.Load(File.OpenRead("parent.xaml"));
 ```
-
