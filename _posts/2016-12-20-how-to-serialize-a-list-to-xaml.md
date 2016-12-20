@@ -55,7 +55,7 @@ public class WpfObject : Label
 
 ### 2. 普通对象中泛型List的序列化
 
-自.Net4.0后，微软在System.Xaml.XamlServices命名控件重新设计了Xaml序列化，使其更好的支持一般的对象，不过比较讽刺的是，这个命名空间的序列化却不能很好的支持WPF控件，所以依然只能用本文第1部分的方法去hack。
+自.Net4.0后，微软在System.Xaml.XamlServices命名空间重新设计了Xaml序列化，使其更好的支持一般的对象，不过比较讽刺的是，这个命名空间的序列化却不能很好的支持WPF控件，所以依然只能用本文第1部分的方法去hack。
 
 考虑以下类型：
 
