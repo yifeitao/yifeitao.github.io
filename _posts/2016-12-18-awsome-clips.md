@@ -20,7 +20,7 @@ categories:
 
 ## 工具
 
-* [Vitual Studio插件](https://github.com/ricksladkey/ClipsLanguage)：语法高亮等。
+* [Virtual Studio插件](https://github.com/ricksladkey/ClipsLanguage)：语法高亮等。
 
 ## .Net封装
 
