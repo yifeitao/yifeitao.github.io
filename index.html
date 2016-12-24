@@ -19,10 +19,9 @@ layout: default
   </ul>
   {%  if paginator.total_pages > 1 %}
     {%  if paginator.previous_page %}
-      <a href="{{site.baseurl}}/
-       {% if paginator.previous_page > 1 %}
-         page{{ paginator.previous_page }}/
-       {%  endif %}">上一页</a>
+      <a href="{{site.baseurl}}/{% if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{%  endif %}">
+       上一页
+     </a>
     {%  endif %}
     {%  for page in (1..paginator.total_pages) %}
       {%  if page == paginator.page %}
