@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  《锻炼的真相》笔记
-date:   2016-12-24 22:19:17 +0800
-categories: coding
+categories: 
 ---
 
 [地平线系列：关于锻炼的真相 Horizon: The Truth About Exercise (2012)](https://movie.douban.com/subject/24844982/)
