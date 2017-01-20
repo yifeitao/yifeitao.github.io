@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  《企业应用架构模式》笔记1
+title:  《企业应用架构模式》笔记2
 categories: coding
 ---
 ## 第5章 并发
