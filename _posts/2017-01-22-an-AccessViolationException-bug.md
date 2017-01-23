@@ -1,6 +1,7 @@
 ---
+layout: post
 title: 记一次AccessViolationException异常的排查
-
+categories: coding
 ---
 
 前几天，同事出差说程序遇到一个偶发的bug，程序会报告内存错误然后崩溃掉。今天终于有时间仔细排查了一下。
