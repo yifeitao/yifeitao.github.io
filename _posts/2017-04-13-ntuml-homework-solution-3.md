@@ -12,8 +12,8 @@ import numpy as np
 import matplotlib.pylab as plt
 
 def generate(N, flips_rate):
-    x1 = np.random.uniform(-1,1,1000)
-    x2 = np.random.uniform(-1,1,1000)
+    x1 = np.random.uniform(-1,1,N)
+    x2 = np.random.uniform(-1,1,N)
     f = np.sign(x1**2+x2**2-0.6)
     y = np.where(np.random.rand(N) < flips_rate, -f, f).T
     return x1, x2, y
