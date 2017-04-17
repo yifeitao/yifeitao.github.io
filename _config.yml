@@ -20,3 +20,5 @@ paginate_path: "page:num"
 # Build settings
 markdown: kramdown
 port: 8080
+
+theme: jekyll-theme-cayman
