@@ -27,6 +27,8 @@ author:
   bio: 活到老 学到老
   email_md5: 4d112196d11034757eacac559da88d77
 
+permalink: /:year/:month/:title.html
+
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
