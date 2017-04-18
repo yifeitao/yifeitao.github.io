@@ -1,24 +1,40 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Site settings
-title: 一言堂
-email: yisha7@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  朝闻道，夕死可矣。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yisha7.me" # the base hostname & protocol for your site
-twitter_username: yisha7
-github_username:  yisha7
-permalink: none
-paginate: 10
+paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
-# Build settings
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
 markdown: kramdown
-port: 8080
+disqus: yisha7
+google_analytics: UA-97561298-1
+title: 一言堂
 
-theme: jekyll-theme-cayman
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: 一言堂
+
+description: 活到老 学到老
+author:
+  name: yisha7
+  email: yisha7@gmail.com
+  github: yisha7
+  twitter: yisha7
+  #pinterest: yisha7
+  #linkedin: asd123
+  bio: 活到老 学到老
+  email_md5: 4d112196d11034757eacac559da88d77
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+gems:
+  - jekyll-paginate
