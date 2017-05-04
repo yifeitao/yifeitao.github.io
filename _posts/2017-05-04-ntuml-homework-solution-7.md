@@ -5,15 +5,15 @@ categories: coding
 ---
 to do: pdf here 待检查正确性
 
-13~20代码 
+13~15代码 
 
 ```python
 import numpy as np
 from scipy import stats
 
 def binSplitDatasSet(dataSet, feature, value):
-    mat0 = dataSet[dataSet[:,feature] > value]
-    mat1 = dataSet[dataSet[:,feature] <= value]
+    mat0 = dataSet[dataSet[:,feature] < value]
+    mat1 = dataSet[dataSet[:,feature] >= value]
     return mat0, mat1
 
 def creatTree(dataSet):
@@ -26,8 +26,6 @@ def creatTree(dataSet):
     retTree['left'] = creatTree(lSet)
     retTree['right'] = creatTree(rSet)
     return retTree
-
-#def predict(tree)
     
 def classifyLeaf(dataSet):
     return stats.mode(dataSet[:,-1])
@@ -77,5 +75,21 @@ def predict(retTree, x):
 dataSet = np.loadtxt('hw7_train.html')
 retTree = creatTree(dataSet)
 print(retTree)
+m, n = dataSet.shape
+count=0
+for i in range(m):
+    x = dataSet[i,:-1]
+    if predict(retTree, x)!=dataSet[i,-1]:
+         count = count+1
+print(count/m)
+
+dataSet2 = np.loadtxt('hw7_test.html')
+m, n = dataSet2.shape
+count=0
+for i in range(m):
+    x = dataSet2[i,:-1]
+    if predict(retTree, x)!=dataSet2[i,-1]:
+        count = count+1
+print(count/m)
 ```
 
