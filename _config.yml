@@ -5,8 +5,8 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: yisha7
-google_analytics: UA-97561298-1
+disqus: yifeitao
+google_analytics: UA-98784328-1
 title: 一言堂
 
 defaults:
@@ -16,16 +16,16 @@ defaults:
     values:
       title: 一言堂
 
-description: 活到老 学到老
+description: 朝闻道 夕死可矣
 author:
-  name: yisha7
-  email: yisha7@gmail.com
-  github: yisha7
-  twitter: yisha7
-  #pinterest: yisha7
+  name: yifeitao
+  email: yifeitao@gmail.com
+  github: yifeitao
+  #twitter: asd123
+  #pinterest: asd123
   #linkedin: asd123
-  bio: 活到老 学到老
-  email_md5: 4d112196d11034757eacac559da88d77
+  bio: 朝闻道 夕死可矣
+  email_md5: dafa8b5b44dbb8be859fbae94a6cd953
 
 permalink: /:year/:month/:title.html
 
