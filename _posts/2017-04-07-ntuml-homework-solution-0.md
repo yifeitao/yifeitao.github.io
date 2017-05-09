@@ -17,4 +17,6 @@ $$K=t+1$$时，$$C(t+1,K) = 1$$结论成立，故$$0\leq K \leq t+1$$ 时结论�
 
 （2）①$$\frac {C(10,4)}{2^{10}}$$
 
-to be copy here
+由于时间关系，改用onenote手写了
+
+https://github.com/yifeitao/lml/blob/master/ntuml/homework/hw0/hw0_solution_handwritten.pdf
