@@ -4,7 +4,7 @@ title: 台大机器学习课程作业8
 categories: coding
 tag: 机器学习
 ---
-to do: pdf here 
+所有关于台大机器学习公开课、机器学习基石、机器学习技法的内容使用github统一更新，本文已经可能已经失效。请访问 https://github.com/yifeitao/lml/tree/master/ntuml 。
 
 11~18代码 
 

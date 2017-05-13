@@ -3,7 +3,7 @@ layout: post
 title: 台大机器学习课程作业7
 categories: coding
 ---
-to do: pdf here 待检查正确性
+所有关于台大机器学习公开课、机器学习基石、机器学习技法的内容使用github统一更新，本文已经可能已经失效。请访问 https://github.com/yifeitao/lml/tree/master/ntuml 。
 
 13~20代码 
 
