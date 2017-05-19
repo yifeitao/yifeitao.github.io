@@ -28,8 +28,9 @@ nav:
     - { Search: '/search/' }
     - { About: '/about/' }
   找到我:
-    - { @github: 'https://github.com/yifeitao' }
-    - { email: 'mailto:yifeitao@gmail.com' }
+    - '/'
+    - { Github: 'https://github.com/yifeitao'}
+    - { Email: 'mailto:yifeitao@gmail.com'}
 
 # Add your friend-links
 # friends:
@@ -48,4 +49,4 @@ category_page: '/categories/'
 reveal_path: https://cdn.bootcss.com/reveal.js/3.4.1/
 
 # additional message in sidebar
-addition: '朝闻道 夕死可矣'
+addition: '</br>朝闻道 夕死可矣'
