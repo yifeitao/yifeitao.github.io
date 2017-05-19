@@ -1,0 +1,75 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+<!-- 
+    Thanks to Chris House! http://chris.house/blog/building-a-simple-archive-page-with-jekyll/
+-->
+
+<div class="tags-expo-section">
+  <!-- output all year.month tags -->
+  {% for post in site.posts %}
+      {% assign currentYear = post.date | date: "%Y" %}
+      {% assign currentMonth = post.date | date: "%m" %}
+      {% if currentYear != thisYear or currentMonth != thisMonth %}
+          <a href="#{{ currentYear }}.{{ currentMonth }}" class="post-tag">#{{ currentYear }}.{{ currentMonth }}</a>
+          {% assign thisYear = currentYear %}
+          {% assign thisMonth = currentMonth %}
+      {% endif %}
+  {% endfor %}
+  <hr/>
+   {% assign thisYear = 0 %}
+   {% for post in site.posts %}
+       {% assign currentYear = post.date | date: "%Y" %}
+       {% assign currentMonth = post.date | date: "%m" %}
+
+       {% if currentYear != thisYear %}
+       {% assign thisMonth = 0 %}
+       {% endif %}
+
+       {% if currentMonth != thisMonth %}
+          {% unless forloop.first %}</ul></div>{% endunless %}
+          {% if currentYear != thisYear %}
+             {% assign thisYear = currentYear %}
+          {% endif %}
+           <div class="filter-section" id="{{ currentYear }}.{{ currentMonth }}">
+           <h3>{{ post.date | date: "%B"}}<span class="archive-year">{{ currentYear }}</span></h3>
+           <ul>
+           {% assign thisMonth = currentMonth %}
+       {% endif %}
+       <li><span class="post-date">{{ post.date | date: "%Y.%m.%d" }}</span> - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+       {% if forloop.last %}</ul></div>{% endif %}
+   {% endfor %}
+
+</div>
+
+<script>
+(function() {
+  var a = document.querySelectorAll('.post-tag');
+  for (var i = 0; i < a.length; i++) {
+    a[i].onclick = function(e) {
+      e = e || window.event; // IE 8 Compatibility
+      var target = e.target || e.srcElement; // same as above
+      for (var j = 0; j < a.length; j++) {
+        if (a[j] != target) {
+          a[j].className = 'post-tag';
+          document.getElementById(a[j].getAttribute('href').substr(1)).className = 'filter-section';
+        } else {
+          target.classList.toggle('select');
+          document.getElementById(target.getAttribute('href').substr(1)).classList.toggle('result');
+        }
+      }
+      e.preventDefault ? e.preventDefault() : (e.returnValue = false); // IE 8 Compatibility
+    } 
+    if (window.location.hash.length) {
+      try {
+        document.querySelector('[href="' + decodeURI(window.location.hash) + '"]').className = 'post-tag select';
+        document.getElementById(decodeURI(window.location.hash).substr(1)).className = 'filter-section result';
+      } catch(err){}
+    }
+  }
+})();
+
+</script>

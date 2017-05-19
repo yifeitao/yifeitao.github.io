@@ -1,0 +1,179 @@
+<div class="toc">
+  <div class="toc-nav">
+  </div>
+</div>
+
+<script>
+
+var toc_nav = document.querySelector('.toc-nav');
+var headers = document.querySelector('article').querySelectorAll('h1:not(.no_toc), h2:not(.no_toc), h3:not(.no_toc), h4:not(.no_toc), h5:not(.no_toc), h6:not(.no_toc)');
+
+(function() {
+
+    var a = document.getElementById('markdown-toc');
+
+    if (a) {
+      a.id = '';
+      toc_nav.appendChild(a);
+      var b = toc_nav.getElementsByTagName('ul');
+      for (i = 0; i < b.length; i++) {
+        b[i].className = 'nav';
+      } 
+      /* Bug (or feature) in IE/Edge: http://stackoverflow.com/questions/20356311/internet-explorer-11-ignores-list-stylenone-on-the-first-load
+
+      A temporary solution is to create a style element and change its inner HTML on each scroll, which will cost much CPU. */
+    }
+    else {
+      var toc_stack = [];
+      var toc_top = document.createElement('ul');
+      toc_top.className = 'nav';
+      var this_node = toc_top;
+    
+      for (i = 0; i < headers.length; i++) {
+  
+        var this_level = headers[i].nodeName.substr(1);
+
+        while (this_level <= toc_stack.slice(-1)[0]) {
+          toc_stack.pop();
+          if (toc_stack.length != 0) { // may be out of range
+            this_node = this_node.parentNode.parentNode;
+          }
+        }
+
+        if (this_level > toc_stack.slice(-1)[0]) {
+          if (this_node.lastChild.lastChild.tagName != 'UL') { // may be duplicated
+            var p = document.createElement('ul');
+            p.className = 'nav';
+            this_node.lastChild.appendChild(p);
+          }
+          this_node = this_node.lastChild.lastChild;
+        }
+
+        toc_stack.push(this_level);
+        var p = document.createElement('li');
+        p.innerHTML = '<a href="#' + headers[i].getAttribute('id') + '">' + headers[i].firstChild.data + '</a>';
+        this_node.appendChild(p);
+      }
+
+      toc_nav.appendChild(toc_top);
+    }
+    
+})();
+
+if (document.documentElement.clientWidth > 1100) {
+
+  toc_nav.style.maxHeight = document.documentElement.clientHeight - 40 + 'px';
+
+  var toc_header_offsettop = [];
+  var toc_offset_top;
+
+  // for scroll_handle function
+  var waiting = false;
+  var endScrollHandle;
+  var last_level;
+
+  // get headers' offsets
+
+  function getOffset() {
+
+    toc_headers = toc_nav.querySelectorAll('li');
+  
+    for(i = 0; i < headers.length; i++) {
+      toc_object = document.getElementById(headers[i].getAttribute('id'));
+      toc_header_offsettop.push(toc_object.offsetTop - toc_object.scrollHeight);
+    } 
+
+  }
+
+  function scroll_handle() {
+    if (waiting) { return; }
+    if (document.getElementById('sidebar-checkbox').checked) { return; }
+    waiting = true;
+    clearTimeout(endScrollHandle);
+    toc_affix_scrollspy();
+    setTimeout(function() { waiting = false; }, 100);
+    endScrollHandle = setTimeout(toc_affix_scrollspy, 150);
+  }
+
+  function toc_affix_scrollspy() {
+    // affix
+    if (window.pageYOffset > toc_offset_top - 20) {
+      if (toc_nav.className != 'toc-nav affix' ) {
+        toc_nav.className = 'toc-nav affix';
+      }
+    }
+    else {
+      if (toc_nav.className != 'toc-nav affix-top' ) {
+        toc_nav.className = 'toc-nav affix-top';
+      }
+    }
+    // find active object
+    for (i = 0; i < headers.length; i++) {
+      if (window.pageYOffset > toc_header_offsettop[i]) {
+        var active_object = toc_headers[i];
+        var this_level = i;
+      }
+    }
+    if (this_level != last_level) {
+      last_level = this_level;
+      // clear .active
+      toc_active = toc_nav.querySelectorAll('.active');
+      for(i = 0; i < toc_active.length; i++) {
+        toc_active[i].className = '';
+      }
+      if (active_object) {
+        while (active_object.tagName === 'LI') {
+          active_object.className = 'active';
+          active_object = active_object.parentNode.parentNode;
+        }
+      }
+    }
+  }
+
+  function TOCprocess() {
+    // 1. compute affix offsets
+    try {
+      toc_offset_top = document.querySelector('.post').offsetTop;
+    } catch(err) {
+      toc_offset_top = document.querySelector('.page').offsetTop;
+    }
+    // 2. compute headers' offsets
+    getOffset();
+    // 3. handle scrolls
+    document.onscroll = scroll_handle;
+  }
+
+  if (typeof(MathJax) != 'undefined') {
+    MathJax.Hub.Register.StartupHook("End",TOCprocess);
+  } else {
+    window.onload = TOCprocess;
+  }
+
+  document.querySelector('.sidebar-nav').innerHTML += '<a class="sidebar-nav-item toggle-toc-desktop" href="javascript:">Hide TOC</a>';
+  document.querySelector('.toggle-toc-desktop').onclick = function(e) {
+    var x = document.querySelector('.wrap');
+    var target = e.target;
+    if (x.className === 'wrap has-toc') { 
+      target.innerText = 'Show TOC';
+    }
+    else {
+      target.innerText = 'Hide TOC';
+    }
+    x.classList.toggle('has-toc');
+    document.getElementById('sidebar-checkbox').checked = false;
+  }
+
+} else {
+  document.querySelector('.wrap').className = 'wrap';
+  document.querySelector('.sidebar-nav').innerHTML += '<input type="checkbox" style="display:none" id="toggle-toc"><label for="toggle-toc"><a class="sidebar-nav-item">Table of Contents</a></label>';
+  (function() {
+    toc_nav.className = 'toc-mobile';
+    var b = toc_nav.getElementsByTagName('a');
+    for (i = 0; i < b.length; i++) {
+        b[i].className = 'sidebar-nav-item sidebar-nav-item-sub';
+    }
+  })();
+  document.querySelector('.sidebar-nav').appendChild(toc_nav);
+}
+
+</script>

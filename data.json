@@ -1,0 +1,14 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+      "title": "{{ post.title | escape }}",
+      "category": "{{ post.categories | join: ' ' }}",
+      "tag": "{{ post.tags | join: ' ' }}",
+      "content": "{{ post.content | strip_html | strip_newlines | remove:  "	" | remove:  "  " | escape | remove: "\" }}",
+      "url": "{{ post.url }}",
+      "date": "{{ post.date | date: "%Y.%m.%d" }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

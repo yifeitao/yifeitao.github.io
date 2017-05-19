@@ -1,63 +1,55 @@
-<!-- sidebar.html -->
-<header class="sidebar-header" role="banner">
-	<a href="{{ site.BASE_PATH }}/">
-		<img src="//www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
-	</a>
-	<h3 class="title">
-        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
-    </h3>
-</header>
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior.
+     Warning: not compatible with IE<9 (for usage of CSS 3).
+-->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-{% if site.author.bio %}
-<div id="bio" class="text-center">
-	{{ site.author.bio }}
-</div>
-{% endif %}
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
 
-<div id="contact-list" class="text-center">
-	<ul class="list-unstyled list-inline">
-		{% if site.author.github %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
-				<i class="fa fa-github-alt fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-		{% if site.author.twitter %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-		{% if site.author.email %}
-		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-	</ul>
-	<ul id="contact-list-secondary" class="list-unstyled list-inline">
-		{% if site.author.pinterest %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://pinterest.com/{{ site.author.pinterest }}">
-				<i class="fa fa-pinterest fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-		{% if site.author.linkedin %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
-				<i class="fa fa-linkedin fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
-				<i class="fa fa-rss fa-lg"></i>
-			</a>
-		</li>
-	</ul>
+  <nav class="sidebar-nav">
+    {% for nav in site.nav %}
+      {% assign is_relative = nav[1][0] | slice: 0 %}
+      {% assign url = nav[1][0] %}
+      {% if is_relative == '/' %}
+        {% assign url = nav[1][0] | prepend: site.baseurl %}
+      {% endif %}
+
+      {% assign sub_len = nav[1] | size | minus: 1 %}
+
+      <a class="sidebar-nav-item {% if page.url == nav[1][0] %}active{% endif %}" href="{{ url }}">
+          {{ nav[0] }}
+      </a>
+
+      {% for i in (1..sub_len) %}
+          {% for sub_nav in nav[1][i] %}
+            {% assign sub_is_relative = sub_nav[1] | slice: 0 %}
+            {% assign sub_url = sub_nav[1] %}
+            {% if sub_is_relative == '/' %}
+              {% assign sub_url = sub_nav[1] | prepend: site.baseurl %}
+            {% endif %}
+              <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == sub_nav[1] %}active{% endif %}" href="{{ sub_url }}">
+                {{ sub_nav[0] }}
+              </a>
+          {% endfor %}
+      {% endfor %}
+
+    {% endfor %}
+
+    <a class="sidebar-nav-item" href="#" onclick="document.getElementById('sidebar-checkbox').checked=false">Back to Top</a>
+
+    {% if site.friends %}
+    <input type="checkbox" id="toggle-friends" style="display:none" checked>
+    <label for="toggle-friends"><a class="sidebar-nav-item">Friends</a></label>
+    <div class="sidebar-friends">
+    {% for friend in site.friends %}
+    <a class="sidebar-nav-item sidebar-nav-item-sub" href="{{ friend[1] }}">{{ friend[0] }}</a>
+    {% endfor %}
+    </div>
+    {% endif %}
+
+  </nav>
+
+<p class="sidebar-item"> © 2006-{{ "now" | date: "%Y"}} {{ site.author }}. {{ site.addition }}</p>
+
 </div>
-<!-- sidebar.html end -->

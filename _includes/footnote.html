@@ -1,0 +1,86 @@
+  <script>
+
+// Compatible for IE 8
+
+  var footnote_timeout;
+
+  (function() {
+
+    var sups = document.querySelectorAll('.footnote');
+    for (i=0; i<sups.length; i++) {
+
+        sups[i].onclick = function(event) { event = event || window.event;event.preventDefault();} // IE 8 Compatibility
+
+        sups[i].onmouseover = function(event) {
+
+            clearTimeout(footnote_timeout);
+
+            event = event || window.event; // IE 8 Compatibility
+
+            if (typeof(event.pageX) === 'undefined') { 
+                event.pageX = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft; 
+                event.pageY = event.clientY + document.body.scrollTop + document.documentElement.scrollTop; 
+            } // IE 8 Compatibility
+
+            var footnote_content = document.getElementById(this.getAttribute('href').substr(1));
+
+            var popup = document.createElement('div');
+            popup.innerHTML = footnote_content.innerHTML;
+            popup.id = 'footnote-popup';
+            popup.style.position = 'absolute';
+
+            var footnotepopup = document.getElementById('footnote-popup');
+            if (footnotepopup) {
+                footnotepopup.parentNode.removeChild(footnotepopup);
+            }
+            document.body.appendChild(popup);
+
+            var footnotepopup = document.getElementById('footnote-popup');
+
+            var reverselink = footnotepopup.querySelector('.reversefootnote');
+            reverselink.parentNode.removeChild(reverselink);
+
+            if (document.documentElement.clientWidth > 400) {
+                if (event.pageX < 200) {
+                    footnotepopup.style.left = '5px';
+                }
+                else if (event.pageX + 200 > document.documentElement.clientWidth) {
+                    footnotepopup.style.left = (document.documentElement.clientWidth - footnotepopup.offsetWidth - 5) + 'px';
+                }
+                else {
+                    footnotepopup.style.left = (event.pageX - footnotepopup.offsetWidth/2) + 'px';
+                }
+            }
+            else { // mobile
+                footnotepopup.style.left = '5px';
+            }
+
+            if (event.pageY - 20 - window.pageYOffset > footnotepopup.offsetHeight) {
+                footnotepopup.style.top = (event.pageY - footnotepopup.offsetHeight - 20) + 'px';
+            }
+            else {
+                footnotepopup.style.top = (event.pageY + 25) + 'px';
+            }
+
+            footnotepopup.onmouseover = function() {
+                clearTimeout(footnote_timeout);
+            };
+
+            footnotepopup.onmouseout = function() {
+                footnote_timeout = setTimeout(function() {
+                    footnotepopup.parentNode.removeChild(footnotepopup);
+                }, 250);
+            };
+            
+        };
+
+        sups[i].onmouseout = function() {
+            footnote_timeout = setTimeout(function() {
+                var footnotepopup = document.getElementById('footnote-popup');
+                if(footnotepopup) footnotepopup.parentNode.removeChild(footnotepopup);
+            }, 250);
+        };
+    }
+  })()
+
+  </script>
