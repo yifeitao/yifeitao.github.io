@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 不要傲慢
-categories: viewpoints
+categories: viewpoint
 ---
 
 最近其实上网闲逛很少了，但是偶尔看看，感觉中文互联网上弥漫着一股傲慢的气息，感觉非常不好。表现有以下几点：

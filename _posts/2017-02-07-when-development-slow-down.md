@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  发展慢下来之后
-categories: viewpoints
+categories: viewpoint
 ---
 今天有同事问了我一个问题：为什么中国经济增速降了一点点大家就大呼小叫，而西方国家发展一直很迟缓也没事？
 

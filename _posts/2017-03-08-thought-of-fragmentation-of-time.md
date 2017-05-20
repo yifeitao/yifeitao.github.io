@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 对碎片化时间的思考
-categories: viewpoints
+categories: viewpoint
 ---
 
 ## 1 为什么时间会碎片化

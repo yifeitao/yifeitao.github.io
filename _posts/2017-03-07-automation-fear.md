@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自动化恐惧
-categories: viewpoints
+categories: viewpoint
 ---
 
 情景喜剧 the big bang theroy中，顶级天才科学家Sheldon围观天才科学家Leonard做实验，几分钟后说，你的工作完全可以用一个小程序替代，Leonard想了想觉得有道理，瞬间陷入了一种废物感。

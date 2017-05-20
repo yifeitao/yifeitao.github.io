@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 管理向下
-categories: viewpoints
+categories: viewpoint
 ---
 
 今天是春节后第一天上班，单位开了好几个会，主题都是“假已经放完了，大家要切换状态，好好工作啊！”。

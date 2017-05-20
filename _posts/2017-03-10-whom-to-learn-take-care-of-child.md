@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 向谁学习带孩子
-categories: viewpoints
+categories: viewpoint
 ---
 带孩子这件事情，其实是几乎所有的高等一点的动物都要做的事情，低等动物依靠数量取胜，一次来上几万个受精卵，总有一些活下来的。高等动物则依靠对后代的照料来弥补数量的不足。
 

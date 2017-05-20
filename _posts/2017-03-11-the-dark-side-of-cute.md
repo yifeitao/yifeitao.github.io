@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 可爱的暗黑面
-categories: viewpoints
+categories: viewpoint
 ---
 “可爱”这个词，一般用来形容小孩子、小猫小狗、熊猫等。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 个体经验与中医
-categories: viewpoints
+categories: viewpoint
 ---
 
 我听说过无数关于治疗感冒的偏方，有喝酒的，有吃生鸡蛋的，有喝姜汤的。

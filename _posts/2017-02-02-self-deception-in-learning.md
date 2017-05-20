@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 学习中的自我欺骗
-categories: viewpoints
+categories: viewpoint
 ---
 
 现代人生活在变化飞快的时代，所以随时有被时代抛弃的焦虑感，这未尝不是好事，会激励人活到老学到老，但是我发现带着焦虑干学习很容易陷入自我欺骗的窘境。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 祛魅
-categories: viewpoints
+categories: viewpoint
 tag: 
 ---
 
