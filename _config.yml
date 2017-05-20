@@ -44,6 +44,7 @@ nav:
 disqus_shortname: yifeitao
 tag_page: '/tags/'
 category_page: '/categories/'
+google_analytics: UA-98784328-1
 
 # reveal.js slide template
 reveal_path: https://cdn.bootcss.com/reveal.js/3.4.1/
