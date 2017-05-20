@@ -2,7 +2,7 @@
 layout: post
 title:  人生三境界
 date:  2007-01-14 14:29:39 +0800
-categories:
+categories: life
 ---
 境界一：不见棺材也落泪！
 

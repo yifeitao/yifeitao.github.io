@@ -2,7 +2,7 @@
 layout: post
 title:  成都印象
 date:   2009-04-09 10:40:00 +0800
-categories: 
+categories: life
 ---
 
 ## 五步之内，必有美食

@@ -2,7 +2,7 @@
 layout: post
 title:  浅谈群体智慧
 date:   2010-01-06 09:59:38 +0800
-categories:
+categories: geek
 tags: [群体智慧]
 ---
 

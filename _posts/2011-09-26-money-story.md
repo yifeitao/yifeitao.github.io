@@ -2,7 +2,7 @@
 layout: post
 title:  钱事
 date:   2011-09-26 10:55:33 +0800
-categories:
+categories: life
 ---
 
 ![钱](https://pixabay.com/static/uploads/photo/2015/09/13/15/14/money-938269_960_720.jpg)

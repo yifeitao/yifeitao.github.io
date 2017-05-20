@@ -2,7 +2,7 @@
 layout: post
 title:  挣钱与花钱的境界
 date:   2009-03-14 21:56:00 +0800
-categories:
+categories: life
 ---
 
 ## 非单身

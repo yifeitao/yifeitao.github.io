@@ -2,7 +2,8 @@
 layout: post
 title: 推选第六辑
 date:  2011-07-03 16:55:44 +0800
-categories:
+categories: life
+tag: twitter
 ---
 1.  《话不投机半句多》：姑娘/你的眼神有几分忧伤/姑娘/你的眼神在流浪/姑娘/请不要说话/破坏你的美好形
 

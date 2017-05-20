@@ -2,7 +2,8 @@
 layout: post
 title: 推选第一辑
 date:   2009-08-22 00:09:36 +0800
-categories: 
+categories: life
+tag: twitter
 ---
 
 1.  早上八九点钟的月亮

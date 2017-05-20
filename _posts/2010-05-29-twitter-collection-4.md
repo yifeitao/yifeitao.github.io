@@ -2,7 +2,8 @@
 layout: post
 title: 推选第四辑
 date:   2010-05-29 19:21:57 +0800
-categories:
+categories: life
+tag: twitter
 ---
 最近玩[新浪微博](http://t.sina.com.cn/yisha7)比较多，导致博客几近荒废。Twitter类服务的的片段化写作、片段话思考、片段化阅读的确有其独到之处，但是我想沉下心来思考依然需要博客。新浪微博虽然是Twitter的山寨，但也算是墙内的无可奈何的替代，毕竟大部分网民还是不会翻墙的。
 

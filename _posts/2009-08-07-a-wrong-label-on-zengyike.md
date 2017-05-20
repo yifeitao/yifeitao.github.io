@@ -3,7 +3,7 @@ layout: post
 title:  曾轶可：错贴的标签
 date:   2009-08-17 12:56:39 +0800
 categories: viewpoint
-tags: ent
+tags: music
 ---
 
 > 那不是我，那不是我，你只是道听途说。——曾轶可：《你是我最好的朋友》

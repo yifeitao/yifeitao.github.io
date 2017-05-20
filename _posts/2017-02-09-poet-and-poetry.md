@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 诗人和诗意
-categories: 
+categories: life
 ---
 昨天读到一首顾城的诗：
 

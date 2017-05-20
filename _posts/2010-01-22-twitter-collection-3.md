@@ -2,7 +2,8 @@
 layout: post
 title: 推选第三辑
 date:   2010-01-22 20:38:43 +0800
-categories:
+categories: life
+tag: twitter
 ---
 1.  陆游——《卜算子·咏梅》：由于后来毛泽东的光环，很多人忽略了陆词的可贵，笑看山花烂漫固然不易，碾作尘香如故却也难得。香气乃骨气也
 

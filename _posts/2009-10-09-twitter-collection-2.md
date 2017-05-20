@@ -2,7 +2,8 @@
 layout: post
 title: 推选第二辑
 date:   2009-08-22 00:09:36 +0800
-categories:
+categories: life
+tag: twitter
 ---
 
 1.  以常态为变态，以变态为常态，个中奥妙，难以尽述
