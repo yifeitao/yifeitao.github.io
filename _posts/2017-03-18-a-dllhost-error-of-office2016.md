@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 一个office2016导致的“操作系统当前配置不能运行此程序”的错误
-categories: life
+categories: geek
+tag: debug
 ---
 
 最近新装了一台电脑windows 10后，还没装几个程序，但是老是在系统启动的时候弹出一个“操作系统当前配置不能运行此程序”的错误窗口，虽然关闭后也不影响使用，但是心里总觉得很难受。

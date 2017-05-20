@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 电影资源
-categories: life
+categories: movie
 ---
 
 https://thepiratebay.org/

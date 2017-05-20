@@ -2,7 +2,7 @@
 layout: post
 title:  辣子鸡丁定律
 date:   2010-10-20 19:11:37 +0800
-categories: life
+categories: methodology
 ---
 ![辣子鸡丁](https://c1.staticflickr.com/5/4013/4640687367_9c3dba2d8f.jpg)
 

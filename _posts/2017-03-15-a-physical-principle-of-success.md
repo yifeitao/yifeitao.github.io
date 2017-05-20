@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于成功的一条物理学原理
-categories: life
+categories: reading
 ---
 
 ![](https://img3.doubanio.com/lpic/s29142312.jpg)

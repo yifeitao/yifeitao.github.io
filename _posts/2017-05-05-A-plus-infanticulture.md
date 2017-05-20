@@ -2,7 +2,7 @@
 layout: post
 title: 《0~6岁A+育儿法》：育儿中的理念与教条
 categories: reading
-tag: 育儿, 教育
+tag: [育儿, 教育]
 ---
 
 ![0-6岁A+育儿法](https://img3.doubanio.com/lpic/s11314900.jpg)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 你还有时间
-categories: movies
+categories: movie
 ---
 
 ![Logan](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2431980130.jpg)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 碎片化学习
-categories: methodology
+categories: learning
 tag: [方法论, 碎片化]
 ---
 

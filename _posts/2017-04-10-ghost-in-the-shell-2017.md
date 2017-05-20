@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 人性与算法
-categories: movies
+categories: movie
 ---
 ![Ghost in the Shell](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2453176400.webp)
 

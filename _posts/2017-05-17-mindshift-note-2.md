@@ -1,8 +1,8 @@
 ---
 layout: post
 title: mindshift 公开课第二周笔记
-categories: life
-tag: learning
+categories: learning
+tag: mindshift
 ---
 
 1. 记忆力不好不见得是坏事，可能更有创造性。记忆力好的人，善于专注模式，而不善于发散模式。

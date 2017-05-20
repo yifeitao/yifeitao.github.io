@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 《春娇救志明》：如果没有俗套，该怎么长大？
-categories: movies
+categories: movie
 tag: [电影]
 ---
 ![春嬌救志明](https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2456056900.webp)

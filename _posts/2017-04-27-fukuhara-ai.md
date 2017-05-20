@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 《福原爱：镜头下的四分之一个世纪 》：不是一个瓷娃娃
-categories: movies
+categories: movie
 tag: [电影]
 ---
 <iframe src="//www.bilibili.com/blackboard/player.html?aid=9523422&cid=15743128&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>

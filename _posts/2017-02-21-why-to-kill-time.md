@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  为什么要杀时间
-categories: life
+categories: methodology
 ---
 我的父母在学龄期赶上了人民公社的尾巴，每天都很忙，但还是整天感觉吃不饱，在那个时代，似乎没有杀时间的概念。
 

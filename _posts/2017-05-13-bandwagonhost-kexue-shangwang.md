@@ -1,7 +1,7 @@
 ---
 layout: post
-title: bandwagonhost安装科学上网工具
-categories: life
+title: bandwagonhost安装
+categories: geek
 comments: true
 ---
 

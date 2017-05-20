@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何面对负面情绪
-categories: life
+categories: methodology
 ---
 ## 1 负面情绪的作用
 

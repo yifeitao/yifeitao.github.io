@@ -1,8 +1,8 @@
 ---
 layout: post
 title: mindshift 公开课第三周笔记
-categories: life
-tag: learning
+categories: learning
+tag: mindshift
 ---
 
 本周的题目叫做Learning and Careers，讲的是学习与职业生涯。

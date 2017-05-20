@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  努力这种幻觉
-categories: life
+categories: methodology
 ---
 
 我在这边厢穷则思变的时候，网上满眼看到的都是华为辞退三十多岁工程师的新闻，简直是刺瞎我的眼睛，让我这三十出头的还想焕发人生第二春的人情何以堪。

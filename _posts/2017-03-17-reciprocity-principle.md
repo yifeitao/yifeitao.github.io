@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 互惠原则
-categories: life
+categories: reading
 ---
 
 互惠原则是一条很重要心理学原理，用中国话说：那就是“吃了人家的嘴软，拿了人家的手短”。

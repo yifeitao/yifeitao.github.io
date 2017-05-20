@@ -1,8 +1,8 @@
 ---
 layout: post
 title: mindshift 公开课第一周笔记
-categories: life
-tag: learning
+categories: learning
+tag: mindshift
 ---
 
 mindshift 公开课是公开课Learning how to learn 的两位合作者在coursera平台开的新课，从脑科学，认知科学等角度来灌的心灵鸡汤，做符合我的口味了。如果说Learning how to learn强调的是人人都应该也能够学会学习，那么mindshift讲的大概是什么其实都能学好，即使你认为自己没兴趣不擅长的事情。

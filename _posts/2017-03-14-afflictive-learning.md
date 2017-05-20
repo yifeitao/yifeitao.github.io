@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 难受的学习
-categories: life
+categories: learning
 ---
 
 学习有时候是快乐的，有时候是难受的，今天再谈谈难受的学习。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何才能学得慢？
-categories: methodology
+categories: learning
 ---
 
 ## 为什么要学得慢？

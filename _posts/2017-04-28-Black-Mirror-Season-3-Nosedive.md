@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 《黑镜3第1集：急转直下》：活在朋友圈里的人们
-categories: movies
+categories: movie
 tag: [电影]
 ---
 

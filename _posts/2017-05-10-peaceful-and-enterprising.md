@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 平和与进取
-categories: life
+categories: methodology
 tag: 
 comments: true
 ---
