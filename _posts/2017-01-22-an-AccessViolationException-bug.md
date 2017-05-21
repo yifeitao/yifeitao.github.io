@@ -2,6 +2,7 @@
 layout: post
 title: 记一次AccessViolationException异常的排查
 categories: coding
+tag: debug
 ---
 
 前几天，同事出差说程序遇到一个偶发的bug，程序会报告内存错误然后崩溃掉。今天终于有时间仔细排查了一下。
@@ -52,6 +53,3 @@ categories: coding
 
 1. 应当让错误早点暴露，限制空指针的传播范围，具体到C++/CLI中，要把它封装成null。
 2. 多线程的坑层出不穷，行为难以预料，要谦虚谨慎。
-
-
-
