@@ -12,13 +12,13 @@ categories: coding
 
 高可配置性可在一定程度上解决快速需求变更问题，把握软件中不变的部分作为模型，将易变的部分通过配置文件等方式约束起来。
 
-![highly-configurable-1](/images/highly-configurable-1.png)
+![highly-configurable-1](/img/highly-configurable-1.png)
 
 ## 2 构建方法
 
 构建高可配置性软件，首先应当针对领域特点建立通用软件模型，然后针对模型使用配置技术。不同的配置加上模型最后构建了不同的软件实例。
 
-![highly-configurable-2](/images/highly-configurable-2.png)
+![highly-configurable-2](/img/highly-configurable-2.png)
 
 ### 2.1 建模
 
@@ -59,7 +59,7 @@ categories: coding
 ## 3 工程实践
 
 如图所示，高可配置性软件开发实际改变了传统软件的开发流程，突出了软件配置在软件生命周期中的重要地位。下面将阐述高可配置性对传统软件开发各阶段带来的影响。
-![highly-configurable-3](/images/highly-configurable-3.png)
+![highly-configurable-3](/img/highly-configurable-3.png)
 
 ### 3.1 需求分析
 
