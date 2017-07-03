@@ -4,7 +4,7 @@ title: 《明月几时有》：战争中的日常生活
 categories: movie
 ---
 
-![img](https://img3.doubanio.com/view/photo/photo/public/p2476069700.webp)
+![img](https://img3.doubanio.com/view/photo/photo/public/p2461981195.webp)
 
 许鞍华的电影大致可以分为两种风格，一种是像《天水围的日与夜》这种，看完基本上很难记得电影有什么情节，但是对生活有体味的人，又会觉察出它的好，看似清水白菜，实则内功深厚，另一种像《天水围的夜与雾》，情节相当火爆，还有那部《投奔怒海》，也算是宏大叙事了。
 
