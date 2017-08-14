@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 教育笔记01
-categories: education1
+categories: education
 ---
 
 #### 1.诺贝尔奖得主谈教育经：10岁前不用学数学
