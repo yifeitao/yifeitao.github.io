@@ -7,7 +7,7 @@ tag: [机器学习, 深度学习]
 
 ![幻灯片1](\img\deeplearning-ai-coursera\C1W3L01\幻灯片1.JPG)
 
-这节课开始讲一般的神经网络。
+这节课开始讲一般的神经网络。<!-- more -->
 
 ![幻灯片2](\img\deeplearning-ai-coursera\C1W3L01\幻灯片2.JPG)
 
