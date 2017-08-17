@@ -6,8 +6,9 @@ author: 'yifeitao'
 logo: '/logo.jpg'
 
 # Site configurations
-gems:
+plugins:
   - jekyll-paginate
+  - jekyll-feed
 markdown: kramdown
 
 excerpt_separator: "<!-- more -->"
