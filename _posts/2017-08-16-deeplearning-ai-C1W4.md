@@ -1,6 +1,6 @@
 ---
 layout: post
-title: deeplearning.ai深度学习课程 第一阶段第四课
+title: deeplearning.ai深度学习课程 第一阶段第四周
 categories: coding
 tag: [机器学习, 深度学习]
 ---
