@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 骗子的美好时代
-categories: viewpoints
+categories: viewpoint
 ---
 
 前两天给老爸下驾考的软件，发现需要实名验证，以后，我们除了在注册账号时要记得自己的身份证号码外，还要记得一件事情，就是骗子的美好时代来临了。
