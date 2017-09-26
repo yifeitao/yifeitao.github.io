@@ -9,7 +9,6 @@ logo: '/logo.jpg'
 plugins:
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
 markdown: kramdown
 
 excerpt_separator: "<!-- more -->"
