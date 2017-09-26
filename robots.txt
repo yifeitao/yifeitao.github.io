@@ -1,4 +1,0 @@
----
-layout: null
----
-Sitemap: {{ site.weburl }}/sitemap.xml
