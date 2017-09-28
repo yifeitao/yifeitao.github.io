@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  失落的世界
+title:  《喋血孤城》：失落的世界
 date:   2010-08-28 04:14:35 +0800
 categories: movie
 ---
