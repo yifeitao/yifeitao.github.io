@@ -10,7 +10,7 @@ categories: geek
 
 首先，买点3M的无痕魔力扣，像这样的，用起来像魔术贴一样。
 
-![高曼™ 无痕魔力扣中号](http://multimedia.3m.com/mws/media/741008P/xy003824584.jpg?width=181)
+![高曼™ 无痕魔力扣中号](https://multimedia.3m.com/mws/media/741008P/xy003824584.jpg?width=181)
 
 用这个挂iPad绰绰有余，而且不用在墙上打洞，具体方法请参看3M产品的说明书。
 
