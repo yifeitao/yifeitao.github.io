@@ -9,6 +9,7 @@ logo: '/logo.jpg'
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-sitemap
 markdown: kramdown
 
 excerpt_separator: "<!-- more -->"
@@ -21,19 +22,19 @@ permalink: '/:year//:month/:title'
 
 # Navigation (2nd level links supported)
 nav:
-  Find Article:
+  一言堂:
     - '/'
-    - { Archive: '/archive/' }
-    - { Categories: '/categories/' }
-    - { Tags: '/tags/' }
-    - { Search: '/search/' }
-  Find Me:
+    - { 归档: '/archive/' }
+    - { 分类: '/categories/' }
+    - { 标签: '/tags/' }
+    - { 搜索: '/search/' }
+  关于我:
     - '/about/'
-    - { About: '/about/' }
+    - { 关于: '/about/' }
+    - { 豆瓣: 'https://www.douban.com/people/yisha7/'}
     - { Github: 'https://github.com/yifeitao'}
-    - { Email: 'mailto:yifeitao@gmail.com'}
-    - { Douban: 'https://www.douban.com/people/yisha7/'}
-  Learning Notes: 
+    - { Email: 'mailto:yifeitao@gmail.com'} 
+  学习笔记: 
     - 'https://learn.yifeitao.com'
 
 # Add your friend-links
