@@ -1,5 +1,5 @@
 # Site Info
-title: "一言堂 - 活到老 学到老"
+title: "一言堂 - 念念不忘，必有回响"
 baseurl: ''
 weburl: 'http://yifeitao.com'
 author: 'yifeitao'
@@ -9,7 +9,6 @@ logo: '/logo.jpg'
 plugins:
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
 markdown: kramdown
 
 excerpt_separator: "<!-- more -->"
@@ -22,17 +21,20 @@ permalink: '/:year//:month/:title'
 
 # Navigation (2nd level links supported)
 nav:
-  一言堂:
+  Find Article:
     - '/'
     - { Archive: '/archive/' }
     - { Categories: '/categories/' }
     - { Tags: '/tags/' }
     - { Search: '/search/' }
+  Find Me:
+    - '/about/'
     - { About: '/about/' }
-  找到我:
-    - '/'
     - { Github: 'https://github.com/yifeitao'}
     - { Email: 'mailto:yifeitao@gmail.com'}
+    - { Douban: 'https://www.douban.com/people/yisha7/'}
+  Learning Notes: 
+    - 'https://learn.yifeitao.com'
 
 # Add your friend-links
 # friends:
