@@ -1,7 +1,7 @@
 # Site Info
 title: "一言堂 - 念念不忘，必有回响"
 baseurl: ''
-weburl: 'http://yifeitao.com'
+weburl: 'https://yifeitao.com'
 author: 'yifeitao'
 logo: '/logo.jpg'
 
@@ -9,7 +9,6 @@ logo: '/logo.jpg'
 plugins:
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
 markdown: kramdown
 
 excerpt_separator: "<!-- more -->"
