@@ -2,6 +2,8 @@
 layout: post
 title:  .Net框架中的算法与数据结构
 categories: coding
+toc: true
+tag: 算法
 ---
 最近复习基础算法，顺带浏览了一下[.Net框架的源码](https://referencesource.microsoft.com/)，通过本文简要总结一下.Net框架中常见数据结构和算法的实现。
 
