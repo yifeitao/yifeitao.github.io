@@ -2,7 +2,8 @@
 layout: post
 title: 推荐阅读
 categories: 
-toc:true
+toc: true
+pinned: true
 ---
 
 ## 基础算法
