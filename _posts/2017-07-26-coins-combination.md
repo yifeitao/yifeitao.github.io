@@ -1,5 +1,5 @@
 ---
-5layout: post
+layout: post
 title: 硬币组合问题
 categories: coding
 tag: 算法
