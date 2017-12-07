@@ -1,5 +1,5 @@
 ---
-5layout: post
+layout: post
 title: 投资中的傲慢与偏见
 categories: viewpoint
 ---
