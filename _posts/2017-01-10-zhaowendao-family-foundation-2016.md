@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  朝闻道家庭基金成立
+title:  朝闻道家庭基金成立及2016年年报
 categories: investment
 tag: zhaowendao
 ---
