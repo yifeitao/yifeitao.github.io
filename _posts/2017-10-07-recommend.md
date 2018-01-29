@@ -20,6 +20,10 @@ pinned: true
 * [闭包](https://yifeitao.com/2017/09/closure)
 * [接口和抽象类](https://yifeitao.com/2017/09/interface-and-abstract-class)
 
+## 机器学习
+
+* [台大机器学习公开课资源（含我的作业解答）](https://yifeitao.com/2017/04/ntuml-resource.html)
+
 ## 软件工程
 
 * [面向巧合编程](https://yifeitao.com/2017/01/coincidence-oriented-programming)
@@ -28,13 +32,6 @@ pinned: true
 * [调试是个技术活](https://yifeitao.com/2016/12/debug-is-technology)
 * [程序设计中的概念一致性](https://yifeitao.com/2017/02/the-uniformity-of-concept)
 * [Peter Norvig的编程建议](https://yifeitao.com/2017/10/programming-advise-from-Peter-Norvig)
-* [软件工程相关读书笔记](https://learn.yifeitao.com/#/software-engineering/)
-
-## ABC 【人工智能 大数据 云计算】
-
-* [台湾大学林轩田机器学习公开课资源与作业解答](https://learn.yifeitao.com/#/ntuml/)
-* [吴恩达深度学习课程笔记](https://learn.yifeitao.com/#/deeplearning-ai/)
-* [UC San Diego大数据课程笔记](https://learn.yifeitao.com/#/coursera-big-data/)
 
 ## 讲课与分享
 
@@ -54,7 +51,6 @@ pinned: true
 * 比特币
   * [比特币FAQ](https://yifeitao.com/2017/08/bitcoin-faq)
   * [如何获得比特币？](https://yifeitao.com/2017/07/how-to-get-bitcoin)
-* [投资相关读书笔记](https://learn.yifeitao.com/#/investment/)
 
 ## 方法论
 

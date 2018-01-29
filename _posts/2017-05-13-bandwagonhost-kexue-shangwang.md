@@ -1,29 +1,25 @@
 ---
 layout: post
-title: bandwagonhost安装
+title: bandwagonhost科学上网工具安装
 categories: geek
 comments: true
 ---
 
-bandwagonhost是一个比较廉价的VPS服务商，目前最便宜的大约$20每年。它支持支付宝付款，具体购买过程再次不再赘述。
+bandwagonhost是一个比较廉价的VPS服务商，俗称“搬瓦工”。目前最便宜的Plan大约$20每年。它支持支付宝付款，具体购买过程在此不赘述。
 
-访问地址 https://bandwagonhost.com/
+[访问地址](https://bandwagonhost.com/)
 
-备用地址 https://bwh1.net/
+[备用地址](https://bwh1.net/) 
 
 购买完毕后 进入 Client Area > My Products & Services，可以看到购买的主机，可以看到ip地址，通过kiwivm control panel可以进行一些基本的操作。
 
-通过install new os可以安装新的操作系统，这里建议安装debian-8.0-x86_64。
+通过install new os可以安装新的操作系统，这里建议安装debian-8.0-x86_64。以下步骤均基于该版本测试通过。
 
 安装完成后，会生成root账号的密码，以及ssh登陆的端口号，需要记下来。
 
-一般vps主机的管理需要shell工具，windows 系统下推荐 [xshell](https://www.netsarang.com/products/xsh_overview.html)。
+一般vps主机的管理需要shell工具，windows 系统下推荐[MobaXterm](https://mobaxterm.mobatek.net/)。这时我用过的最强大的shell工具了，不但可以ssh登陆进行命令行操作，还支持远程文件管理与远程文件编辑（其基本过程是下载==>编辑==>上传，但是整个过程自动化了）。它的配置需要ip地址，用户名root，以及密码和端口号。
 
-还需要sftp工具，可以使用[filezilla](https://filezilla-project.org/download.php)。
-
-它们的配置需要ip地址，用户名root，以及密码和端口号。
-
-xshell登陆远程主机后。开始安装科学上网相关服务。
+MobaXterm登陆远程主机后。开始安装科学上网相关服务。
 
 ## 1 V2Ray的安装
 
@@ -31,7 +27,7 @@ xshell登陆远程主机后。开始安装科学上网相关服务。
 
 首先升级系统，安装curl工具。
 
-```shell
+```bash
 apt-get update
 apt-get upgrade
 apt-get install curl
@@ -39,7 +35,7 @@ apt-get install curl
 
 V2Ray官方有一键安装脚本，相当省心。
 
-```shell
+```bash
 bash <(curl -L -s https://install.direct/go.sh)
 ```
 
@@ -268,10 +264,15 @@ service v2ray restart
 
 启动v2ray.exe，代理 127.0.0.1:1080就开始工作了，配置你的浏览器使用socket5协议代理，地址配置为127.0.0.1:1080就可以开始科学上网了。
 
-iOS客户端推荐。
+iOS客户端推荐：
 
 * [Shadowing](**https://itunes.apple.com/cn/app/shadowing/id1194879940?mt=8**): 售价￥6，支持shadowsocket协议。
 * [Shadowrocket](https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8): 售价￥18，支持shadowsocket协议和V2Ray的新协议。
+
+Android客户端推荐：
+
+* [v2rayNG](https://github.com/2dust/v2rayNG)：免费，支持V2Ray的新协议。
+* [影梭](https://github.com/shadowsocks/shadowsocks-android)：免费，支持shadowsocket协议。
 
 ## 2 OpenConnect server的安装
 
@@ -295,4 +296,4 @@ bash ocservauto.sh
 
 windows客户端官网下载比较麻烦，这里给出一个下载地址 http://ftp.spbexchange.ru/net/vpn/
 
-客户端的配置相当简单，注意ip地址后要加端口号，然后在警告时信任你自己的服务器。
+客户端的配置相当简单，注意ip地址后要加端口号，然后在警告时信任你自己的服务器。                   xzcddddadaddadAdaD aaa                
