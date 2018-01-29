@@ -13,6 +13,12 @@ pinned: true
 * [逆序对计数问题](https://yifeitao.com/2017/07/anti-order-pair)
 * [有趣的位操作](https://yifeitao.com/2017/08/funny-bit-operation)
 
+## 机器学习
+
+* [台大机器学习公开课资源（含我的作业解答）](https://yifeitao.com/2017/04/ntuml-resource.html)
+* [throstle: a tiny machine learning library just for human learning](https://github.com/yifeitao/THROSTLE)
+* [基于RNN实现加法](https://yifeitao.com/2018/01/addtion-by-rnn)
+
 ## 编程语言
 
 * [如何创建一个对象(C#篇)](https://yifeitao.com/2017/01/how-to-create-an-object-in-csharp)
@@ -20,9 +26,7 @@ pinned: true
 * [闭包](https://yifeitao.com/2017/09/closure)
 * [接口和抽象类](https://yifeitao.com/2017/09/interface-and-abstract-class)
 
-## 机器学习
 
-* [台大机器学习公开课资源（含我的作业解答）](https://yifeitao.com/2017/04/ntuml-resource.html)
 
 ## 软件工程
 
