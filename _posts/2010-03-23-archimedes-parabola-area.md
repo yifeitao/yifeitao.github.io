@@ -6,7 +6,7 @@ categories: math
 ---
 近年来人们发现了[《阿基米德羊皮书》](http://book.douban.com/subject/3106607/)，其中有阿基米德用杠杆原理求抛物线形的面积的记载，这里面其实已经有微积分思想的雏形了。
 
-![ parabola-area](/img/parabola-area.png)
+![ parabola-area](/assets/images/parabola-area.png)
 
 如上图所示，求Rt△ACZ的内接抛物线形ABC的面积。
 

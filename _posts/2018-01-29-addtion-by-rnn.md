@@ -14,11 +14,11 @@ tag: 机器学习
 
 加法可视为两个加数构造的序列来预测作为和的序列，因此可以用RNN来实现。示意图如下：输入序列、输出序列长度均为3，使用一层RNN存储进位信息。输入输出均使用one-hot编码后，输入特征数为20，输出特征数为10，中间层使用RNN，其隐藏节点数设为32。
 
-![addtion-by-rnn-1](/img/addtion-by-rnn-1.png)
+![addtion-by-rnn-1](/assets/images/addtion-by-rnn-1.png)
 
 使用keras搭了一下模型，图示如下：
 
-![addtion-by-rnn-2](/img/addtion-by-rnn-2.png)
+![addtion-by-rnn-2](/assets/images/addtion-by-rnn-2.png)
 
 代码如下：
 

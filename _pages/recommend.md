@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: page
 title: 推荐阅读
 categories: 
 toc: true
-pinned: true
+permalink: /recommend/
 ---
 
 ## 基础算法

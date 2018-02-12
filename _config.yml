@@ -3,7 +3,7 @@ title: "一言堂 - 念念不忘，必有回响"
 baseurl: ''
 weburl: 'https://yifeitao.com'
 author: 'yifeitao'
-logo: '/logo.jpg'
+logo: '/assets/images/logo.jpg'
 
 # Site configurations
 plugins:
@@ -23,6 +23,7 @@ permalink: '/:year//:month/:title'
 nav:
   一言堂:
     - '/'
+    - { 推荐: '/recommend/' }
     - { 归档: '/archive/' }
     - { 分类: '/categories/' }
     - { 标签: '/tags/' }

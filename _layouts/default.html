@@ -14,7 +14,7 @@
       {% endif %}
     </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"> 
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"> 
     <!-- share.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
     <!-- share.js -->
@@ -89,19 +89,19 @@
         var c = document.getElementsByTagName('audio');
         if (c.length) {
           for (var i = 0; i < c.length; i++) {
-            if (!c[i].getAttribute('cover')) { c[i].setAttribute('cover', '{{ site.baseurl }}/img/music.jpg'); }
+            if (!c[i].getAttribute('cover')) { c[i].setAttribute('cover', '{{ site.baseurl }}/assets/images/music.jpg'); }
             if (!c[i].getAttribute('color')) { c[i].setAttribute('color', '#e17aa0'); }
             c[i].setAttribute('controls', '');
           }
           var d = document.createElement('style');
-          d.innerHTML = "@font-face {font-family: 'iconfont_bplayer';src: url('{{ site.baseurl }}/extra/bPlayer_font.woff') format('woff')}";
+          d.innerHTML = "@font-face {font-family: 'iconfont_bplayer';src: url('{{ site.baseurl }}/assets/extra/bPlayer_font.woff') format('woff')}";
           document.body.appendChild(d); // use document.body.innerHTML += '<style>' will trigger a wierd bug, which will convert DOM variables to virtual DOM (maybe for XSS secure reasons). Revert.
           var a = document.createElement('link');
           a.rel = 'stylesheet';
-          a.href = '{{ site.baseurl }}/extra/bplayer.min.css';
+          a.href = '{{ site.baseurl }}/assets/extra/bplayer.min.css';
           document.body.appendChild(a);
           var b = document.createElement('script');
-          b.src = '{{ site.baseurl }}/extra/bplayer.min.js';
+          b.src = '{{ site.baseurl }}/assets/extra/bplayer.min.js';
           document.body.appendChild(b);
         }
     })();
