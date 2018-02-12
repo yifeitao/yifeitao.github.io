@@ -1,4 +1,5 @@
 ---
 layout: null
+permalink: robots.txt
 ---
 Sitemap: {{ site.weburl }}/sitemap.xml

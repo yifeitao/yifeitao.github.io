@@ -55,3 +55,8 @@ reveal_path: https://cdn.bootcss.com/reveal.js/3.4.1/
 
 # additional message in sidebar
 addition: '</br>朝闻道 夕死可矣'
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
