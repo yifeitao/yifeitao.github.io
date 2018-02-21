@@ -18,9 +18,9 @@ layout: default
   </script>
   {% endif %}
 
-  {% if page.disqus and site.disqus_shortname %}
+  {% if page.comment and site.comments_provider %}
   <hr>
-  {% include disqus.html %}
+  {% include {{site.comments_provider}}.html %}
   {% endif %}
 </div>
 

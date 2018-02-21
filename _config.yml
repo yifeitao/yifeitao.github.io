@@ -46,9 +46,14 @@ nav:
 # relative_path: true
 
 # Where are tags and categories displayed
-disqus_shortname: yifeitao
 tag_page: '/tags/'
 category_page: '/categories/'
+
+# Comments provider config
+comments_provider: livere
+livere_uid: MTAyMC8zNDI2NS8xMDgwMg==
+#disqus_shortname: yifeitao
+
 google_analytics: UA-98784328-1
 
 # reveal.js slide template

@@ -36,9 +36,9 @@ layout: default
   </script>
   {% endif %}
   
-  {% if site.disqus_shortname %}
+  {% if site.comments_provider %}
   <hr>
-  {% include disqus.html %}
+  {% include {{site.comments_provider}}.html %}
   {% endif %}
    
 </div>
