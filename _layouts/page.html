@@ -20,7 +20,7 @@ layout: default
 
   {% if page.comment and site.comments_provider %}
   <hr>
-  {% include {{site.comments_provider}}.html %}
+  {% include comments-providers/{{site.comments_provider}}.html %}
   {% endif %}
 </div>
 
