@@ -4,7 +4,7 @@ title:  《喋血孤城》：失落的世界
 date:   2010-08-28 04:14:35 +0800
 categories: movie
 ---
-![常德会战纪念碑](http://p.qpic.cn/ninja/0/ninja1399468395/0)
+![常德会战纪念碑](https://i.imgur.com/QjYd6kX.jpg)
 
 # 一
 我想先用罗嗦的语调记下一个故事，尽管这个故事已经模糊到没有情节，没有细节，只剩下一点片段。

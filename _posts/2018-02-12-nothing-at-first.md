@@ -5,7 +5,7 @@ categories: life
 toc: true
 ---
 
-![img](http://www.moderno2.com/wp-content/uploads/2016/02/74.jpg)
+![img](https://i.imgur.com/cBue1xF.png)
 
 题图是中国当代艺术家宋冬推出的“物尽其用”装置艺术展的一角，宋冬的母亲一辈子舍不得扔东西，将所有物品囤积起来，包括这些牙膏皮。<!-- more -->
 
