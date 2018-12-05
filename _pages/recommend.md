@@ -9,7 +9,6 @@ permalink: /recommend/
 
 * [二分类问题的评分值与损失函数](https://yifeitao.com/2018/02/score-and-loss-function-of-binary-classification)
 * [台大机器学习公开课资源（含我的作业解答）](https://yifeitao.com/2017/04/ntuml-resource.html)
-* [throstle: a tiny machine learning library just for human learning](https://github.com/yifeitao/THROSTLE)
 * [基于RNN实现加法](https://yifeitao.com/2018/01/addtion-by-rnn)
 
 ## 基础算法
@@ -41,7 +40,7 @@ permalink: /recommend/
 
 ## 投资理财
 
-* [朝闻道家庭基金](https://github.com/yifeitao/zhaowendao)：目前本人在运作的家庭投资基金。
+* [朝闻道家庭基金](https://yifeitao.com/tags/#zhaowendao)：目前本人在运作的家庭投资基金。
 * [保险入门](https://yifeitao.com/2017/06/tips-of-insurance)
 * [个人理财的15条原理](https://yifeitao.com/2017/01/the-15-principle-of-personal-finance)
 * [每一块钱都是平等的](https://yifeitao.com/2017/01/every-yuan-is-equal)
