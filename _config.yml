@@ -48,8 +48,8 @@ tag_page: '/tags/'
 category_page: '/categories/'
 
 # Comments provider config
-comments_provider: livere
-livere_uid: MTAyMC8zNDI2NS8xMDgwMg==
+comments_provider: vssue
+#livere_uid: MTAyMC8zNDI2NS8xMDgwMg==
 #disqus_shortname: yifeitao
 
 # Analytics provider config
