@@ -5,14 +5,14 @@
 <script>
 new Vue({
     el: '#vssue',
-    render: h => h('Vssue', {
+    render: h => h('Comment', {
     props: {
         title: '{{ page.title }}',
         options: {
-        owner: 'yifeitao',
-        repo: 'yifeitao.github.io',
-        clientId: '1d4ebc70fd877e40b5fa',
-        clientSecret: '209ea95a15aa7c9ae6eae6abcdadc2200f7dedbe',
+        owner: '{{site.owner}}',
+        repo: '{{site.repo}}',
+        clientId: '{{site.vssue_clientId}}',
+        clientSecret: '{{site.vssue_clientSecret}}',
         },
     }
     })
