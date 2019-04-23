@@ -2,7 +2,7 @@
 layout: post
 title:  青蛙与缓存：简化实用版动态规划
 categories: coding
-tag: 算法， python
+tag: 算法, python
 mathjax: true
 toc: true
 ---
@@ -21,6 +21,8 @@ toc: true
 $$
 \begin{aligned} F_{0} &=0 \\ F_{1} &=1 \\ F_{n} &=F_{n-1}+F_{n-2} \quad(\mathrm{n} \geq 2) \end{aligned}
 $$
+
+
 解决这类求函数值问题的第一步，是找到一个递推式。我们把递推式翻译成python代码：
 
 ```python
