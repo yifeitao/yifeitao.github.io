@@ -2,7 +2,7 @@
 layout: post
 title:  青蛙与缓存：简化实用版动态规划
 categories: coding
-tag: 算法, python
+tag: 算法 python
 mathjax: true
 toc: true
 ---
@@ -138,7 +138,7 @@ class Solution:
 
 我们考虑数组中每一个位置结尾能得到的最大和的递推关系。
 $$
-\begin{aligned} & f(0)=nums(0) \\& f(k)=max(f(k-1), 0)+nums(k) \quad(k>0) \end{aligned}
+\begin{aligned}  f(0)&=nums(0) \\ f(k)&=max(f(k-1), 0)+nums(k) \quad(k>0) \end{aligned}
 $$
 基于此不难得到最终结果为
 $$
@@ -182,12 +182,14 @@ class Solution:
 将矩阵中每个位置作为右下角，求最小路径和，不难得到如下递推公式：
 $$
 \begin{aligned} 
-& f(0, 0)=grid(0, 0) \\
-& f(x, 0)=f(x-1, 0)++grid(x, 0) \quad(x>0) \\
-& f(0, y)=f(0, y-1)++grid(0, y) \quad(y>0) \\
-& f(x, y)=min(f(x-1, y), f(x, y-1))+grid(x, y) \quad(x>0, y>0) 
+f(0, 0)&=grid(0, 0) \\
+f(x, 0)&=f(x-1, 0)++grid(x, 0) \quad(x>0) \\
+f(0, y)&=f(0, y-1)++grid(0, y) \quad(y>0) \\
+f(x, y)&=min(f(x-1, y), f(x, y-1))+grid(x, y) \quad(x>0, y>0) 
 \end{aligned}
 $$
+
+
 在leetcode中翻译成python3代码如下：
 
 ```python
