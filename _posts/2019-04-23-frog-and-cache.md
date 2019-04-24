@@ -2,7 +2,7 @@
 layout: post
 title:  青蛙与缓存：简化实用版动态规划
 categories: coding
-tag: 算法 python
+tag: [算法, python]
 mathjax: true
 toc: true
 ---
