@@ -126,7 +126,7 @@ class Solution:
 
 为了检验这套方案，我们再看几道题，直接在leetcode上再找几个来刷。
 
-### [ 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
+### 2.1 [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
 
 给定一个整数数组 `nums` ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 
@@ -163,7 +163,7 @@ class Solution:
 
 执行耗时76 ms，内存消耗13.7 MB。
 
-### [ 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
+### 2.2 [最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
 
 给定一个包含非负整数的 *m* x *n* 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
 

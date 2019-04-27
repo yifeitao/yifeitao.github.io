@@ -10,6 +10,9 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 markdown: kramdown
+kramdown:  
+  input: GFM
+  syntax_highlighter: rouge
 
 excerpt_separator: "<!-- more -->"
 sass:

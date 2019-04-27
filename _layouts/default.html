@@ -15,6 +15,7 @@
     </title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"> 
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css"> 
     <!-- share.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
     <!-- share.js -->
@@ -41,6 +42,17 @@
       </div>
 
       <div class="container">
+          {% if page.mathjax %}
+  <script src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML">
+    MathJax.Hub.Config({ 
+      tex2jax: { 
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ], 
+        displayMath:[ ["$$","$$"], ["\\[","\\]"] ], 
+        processEscapes: true 
+      } 
+    });
+  </script>
+  {% endif %}
         <!--[if lt IE 7]>
         <style>.container{margin:0 300px!important;}</style>
         <![endif]-->
