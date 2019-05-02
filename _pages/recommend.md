@@ -13,6 +13,7 @@ permalink: /recommend/
 
 ## 基础算法
 
+* [青蛙与缓存：简化实用版动态规划](https://yifeitao.com/2019/04/frog-and-cache)
 * [全排列生成算法实现](https://yifeitao.com/2017/07/permutation-generation)
 * [硬币组合问题](https://yifeitao.com/2017/07/coins-combination)
 * [逆序对计数问题](https://yifeitao.com/2017/07/anti-order-pair)
@@ -40,7 +41,7 @@ permalink: /recommend/
 
 ## 投资理财
 
-* [朝闻道家庭基金](https://yifeitao.com/tags/#zhaowendao)：目前本人在运作的家庭投资基金。
+* [朝闻道家庭基金](https://yifeitao.com/zhaowendao)：目前本人在运作的家庭投资基金。
 * [保险入门](https://yifeitao.com/2017/06/tips-of-insurance)
 * [个人理财的15条原理](https://yifeitao.com/2017/01/the-15-principle-of-personal-finance)
 * [每一块钱都是平等的](https://yifeitao.com/2017/01/every-yuan-is-equal)
