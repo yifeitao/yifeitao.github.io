@@ -43,7 +43,7 @@
 
       <div class="container">
           {% if page.mathjax %}
-  <script src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML">
+  <script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML">
     MathJax.Hub.Config({ 
       tex2jax: { 
         inlineMath: [ ['$','$'], ["\\(","\\)"] ], 
@@ -53,6 +53,11 @@
     });
   </script>
   {% endif %}
+
+  {% if page.mermaid %}
+  <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+  {% endif %}
+
         <!--[if lt IE 7]>
         <style>.container{margin:0 300px!important;}</style>
         <![endif]-->

@@ -2,6 +2,7 @@
 layout: post
 title: 高可配置性软件开发
 categories: coding
+mermaid: true
 ---
 
 可配置性是软件工程实践中的重要问题之一，配置文件与可执行文件一起构成了软件运行时版本控制的要素，Visual Basic，Python、Lua等解释型语言，常以所谓“脚本”的形式出现，进一步提升了操作系统、游戏等大型软件的可配置性，而领域驱动设计在强调领域模型的同时，也带动了描述配置领域模型的领域特定语言的发展。在工业控制领域，软件的可配置性用组态的概念来描述；在游戏开发领域，一般用引擎和脚本的概念来描述。
@@ -12,13 +13,29 @@ categories: coding
 
 高可配置性可在一定程度上解决快速需求变更问题，把握软件中不变的部分作为模型，将易变的部分通过配置文件等方式约束起来。
 
-![highly-configurable-1](/assets/images/highly-configurable/1.png)
+<div class="mermaid">
+graph TB
+    subgraph 软件
+        complexity2[复杂性]-->abstract[共通抽象]
+    end
+    subgraph 软件
+        complexity1[复杂性]-->complexity3[复杂性]
+    end
+</div>    
 
 ## 2 构建方法
 
 构建高可配置性软件，首先应当针对领域特点建立通用软件模型，然后针对模型使用配置技术。不同的配置加上模型最后构建了不同的软件实例。
 
-![highly-configurable-2](/assets/images/highly-configurable/2.png)
+<div class="mermaid">
+graph TB
+    subgraph 软件2
+        config2[软件配置2]-->abstract2[通用模型]
+    end
+    subgraph 软件1
+        config1[软件配置1]-->abstract1[通用模型]
+    end
+</div>  
 
 ### 2.1 建模
 
@@ -59,7 +76,24 @@ categories: coding
 ## 3 工程实践
 
 如图所示，高可配置性软件开发实际改变了传统软件的开发流程，突出了软件配置在软件生命周期中的重要地位。下面将阐述高可配置性对传统软件开发各阶段带来的影响。
-![highly-configurable-3](/assets/images/highly-configurable/3.png)
+
+<div class="mermaid">
+graph TB
+    subgraph 高可配置性软件流程
+    	requirements2[需求分析]-->construct2[软件主体构建]
+    	construct2-->config[软件配置]
+        config-->test2[软件主体测试]
+        config-->config_test[软件配置测试]
+		test2-->maintain2[软件主体维护] 
+		config_test-->config_maintain[软件配置维护]
+    end
+    
+    subgraph 一般软件流程
+    	requirements1[需求分析]-->construct1[软件构建]
+        construct1-->test1[软件测试]
+		test1-->maintain1[软件维护] 
+    end
+</div>  
 
 ### 3.1 需求分析
 
