@@ -93,24 +93,23 @@ sudo pacman -S --noconfirm archlinuxcn-keyring antergos-keyring
 sudo pacman -S yay
 ```
 
-### 4 安装输入法和中文字体
+### 4 安装中文字体和输入法
+
+* 安装中文字体
+```
+sudo pacman -S --noconfirm wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk && fc-cache -fv
+```
 
 * 安装谷歌输入法
 
 ```
-sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-sogoupinyin 
+sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-googlepinyin 
 ```
 
 * 配置fcitx， 配置完需要重启
 
 ```
 sudo echo -e "export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=@im=fcitx">>~/.xprofile
-```
-
-* 安装中文字体
-
-```
-sudo pacman -S --noconfirm wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk && fc-cache -fv
 ```
 
 ### 5  Windows硬盘挂载
@@ -142,11 +141,13 @@ chmod 600 ~/.ssh/id_rsa
 
 使用pacman或yay安装
 
-快捷方式目录 /usr/share/applications
-
 * chrome
-* jetbrains-toolbox
-* deepin-wine, deepin-wxworks（需要导入字体映射配置）
+* intellij-idea-ultimate-edition
+* deepin-wine, deepin-wxwork（需要导入如下字体映射配置）
+
+```
+vim zh-font.reg 
+```
 
 ```
 REGEDIT4
@@ -163,7 +164,7 @@ REGEDIT4
 ```
 
 ```
-deepin-wine regedit zh.reg 
+deepin-wine regedit zh-font.reg 
 ```
 
 * easystroke
@@ -171,7 +172,7 @@ deepin-wine regedit zh.reg
 * nextcloud
 * git-cola
 * postman-bin
-* xmind （需要删除快捷方式最后一行）
+* xmind （removed "--add-modules=java.se.ee" in /usr/share/xmind/XMind/XMind.ini ）
 * python-tensorflow-opt-cuda  python-pytorch-cuda 
 * nvidia-docker
 * ipython jupyter 
@@ -182,3 +183,4 @@ deepin-wine regedit zh.reg
 * visual-studio-code-bin
 * wps-office
 * dbeaver-ce
+* foxitreader
