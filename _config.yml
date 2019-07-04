@@ -37,6 +37,10 @@ nav:
     - { 豆瓣: 'https://www.douban.com/people/yisha7/'}
     - { Github: 'https://github.com/yifeitao'}
     - { Email: 'mailto:yifeitao@gmail.com'} 
+  朝闻道:
+    - '/zhaowendao/'
+  Learn:
+    - 'https://github.com/yifeitao/learn/wiki'
 
 # Add your friend-links
 # friends:
