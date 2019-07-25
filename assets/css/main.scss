@@ -310,6 +310,8 @@ tbody tr:nth-child(odd) th {
 .post-date {
   color: $post-date-color;
   font-size: 14px;
+  float:right; 
+  position:relative;
 }
 
 .post-addition {
@@ -957,4 +959,11 @@ div#footnote-popup {
     display: block;
     border: 1px solid $theme-color;
     padding: 16px 18px 0 18px;
+}
+
+#show li {
+  position: relative;
+  display: inline-block;
+  height : 30px;
+  padding: 10px;
 }

@@ -1,5 +1,6 @@
 # Site Info
-title: "一言堂 - 念念不忘，必有回响"
+title: "第二类进化"
+slogan: "关注人工智能、学习科学、价值投资"
 baseurl: ''
 weburl: 'https://yifeitao.com'
 author: 'yifeitao'
@@ -7,7 +8,6 @@ logo: '/assets/images/logo.jpg'
 
 # Site configurations
 plugins:
-  - jekyll-paginate
   - jekyll-feed
 markdown: kramdown
 kramdown:  
@@ -18,28 +18,22 @@ excerpt_separator: "<!-- more -->"
 sass:
   style: compressed
   sass_dir: _scss
-paginate: 10
-paginate_path: '/page:num/'
+recent_post: 10
 permalink: '/:year//:month/:title'
 
 # Navigation (2nd level links supported)
 nav:
-  一言堂:
+  第二次进化:
     - '/'
     - { 推荐: '/recommend/' }
     - { 归档: '/archive/' }
     - { 分类: '/categories/' }
     - { 标签: '/tags/' }
     - { 搜索: '/search/' }
-  关于我:
-    - '/about/'
     - { 关于: '/about/' }
-    - { 豆瓣: 'https://www.douban.com/people/yisha7/'}
-    - { Github: 'https://github.com/yifeitao'}
-    - { Email: 'mailto:yifeitao@gmail.com'} 
   朝闻道:
     - '/zhaowendao/'
-  Learn:
+  Learn Wiki:
     - 'https://github.com/yifeitao/learn/wiki'
 
 # Add your friend-links
@@ -71,7 +65,7 @@ google_analytics: UA-98784328-1
 reveal_path: https://cdn.bootcss.com/reveal.js/3.4.1/
 
 # additional message in sidebar
-addition: '</br>朝闻道 夕死可矣'
+addition: '</br>念念不忘，必有回响'
 
 # Reading Files
 include:

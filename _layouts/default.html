@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ff9950">
     <title>
       {% if page.title == "Home" %}
-        {{ site.title }}
+        {{ site.title }} - {{ site.slogan }}
       {% else %}
         {{ page.title }} - {{ site.title }}
       {% endif %}
@@ -36,9 +36,10 @@
     <div class="wrap {% if page.toc %}has-toc{% endif %}">
 
       <div class="masthead">
-        <a href="{{ site.baseurl }}/" title="{{ site.title }}">
+        <a href="{{ site.baseurl }}/" title="{{ site.title }}-{{ site.slogan }}">
           <img class="masthead-logo" src="{{ site.baseurl }}{{ site.logo }}"/>
         </a>
+        <p>{{ site.title }}</p>
       </div>
 
       <div class="container">
