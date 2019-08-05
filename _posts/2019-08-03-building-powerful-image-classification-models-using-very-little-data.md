@@ -17,8 +17,8 @@ categories: coding
 
 这会让我们涉及以下的Keras 特性：
 
-* ``fit_generator` `使用Python数据生成器来训练Keras模型
-* ``ImageDataGenerator` `实时的图像增强
+* `fit_generator` 使用Python数据生成器来训练Keras模型
+* `ImageDataGenerator` 实时的图像增强
 * 层冻结和模型微调
 * ...其它
 
