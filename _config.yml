@@ -1,5 +1,5 @@
 # Site Info
-title: "第二类进化"
+title: "次生进化"
 slogan: "关注人工智能、学习科学、价值投资"
 baseurl: ''
 weburl: 'https://yifeitao.com'
@@ -25,16 +25,11 @@ permalink: '/:year//:month/:title'
 nav:
   第二次进化:
     - '/'
-    - { 推荐: '/recommend/' }
     - { 归档: '/archive/' }
     - { 分类: '/categories/' }
     - { 标签: '/tags/' }
     - { 搜索: '/search/' }
     - { 关于: '/about/' }
-  朝闻道:
-    - '/zhaowendao/'
-  Wiki:
-    - '/wiki/'
 
 # Add your friend-links
 # friends:

@@ -2,7 +2,7 @@
 ---
 /* Basic Configuration */
 
-$theme-color: #e17aa0;
+$theme-color: #3D3B4F;
 $theme-color-dark: darken($theme-color, 10%);
 $theme-color-light: lighten($theme-color, 30%);
 $post-date-color: #9a9a9a;
@@ -515,6 +515,7 @@ a.btn-common {
   margin-bottom: 45px;
   border-bottom: 1px solid #eee;
   text-align: center;
+  color: $theme-color;
   @media (min-width: 450px) {
     width: 100%;
   }
@@ -704,7 +705,7 @@ a.sidebar-nav-item:focus {
 /* Tag */
 
 .post-tag {
-  background: $theme-color-light;
+  background: #FFFBF0;
   display: inline-block;
   padding: 0 5px;
   margin: 3px;
